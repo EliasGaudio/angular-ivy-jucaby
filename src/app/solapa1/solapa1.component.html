@@ -1,0 +1,27 @@
+<div *ngFor="let pelicula of peliculas">
+  <h3>
+    {{pelicula.titulo}}
+  </h3>
+
+  <p>
+    Hora de exposicion: {{pelicula.fecha}}
+  </p>
+
+  <p>
+    Sala: {{pelicula.sala}}
+  </p>
+
+  <p>
+    Butacas Disponibles: {{pelicula.butacas_disponibles.length/6}}
+  </p>
+
+  <p>
+    {{vigencia(pelicula.vigente)}}
+  </p>
+
+
+  <button *ngIf="pelicula.vigente" (click)="navigate(pelicula.id, pelicula.sala, pelicula.butacas_disponibles)">
+    Reservar
+  </button>
+
+</div>

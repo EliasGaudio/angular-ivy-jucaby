@@ -1,0 +1,14 @@
+#square {
+  width: 89px;
+  height: 30px;
+  background: red;
+}
+#square2 {
+  width: 89px;
+  height: 30px;
+  background: green;
+}
+
+button{
+  background: green;
+}

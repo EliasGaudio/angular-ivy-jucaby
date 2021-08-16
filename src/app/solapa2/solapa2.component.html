@@ -1,0 +1,28 @@
+
+
+
+
+  <div *ngFor="let butaca of butacasActuales"> 
+  {{butaca}}
+
+  <div *ngFor="let butaca2 of butacasLibres"> 
+    <div id="square2" *ngIf="butaca == butaca2" >
+    <button (click) = "reservar(butaca)">
+    Reservar
+  </button>     
+</div>
+    
+  </div>
+
+  <div id="square"></div>
+  
+
+
+
+
+
+
+
+
+
+  </div>
